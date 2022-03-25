@@ -11,12 +11,13 @@ const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <Navigation>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Radio" component={Radio}/>
-      </Stack.Navigator>      
-    </Navigation>
+    <View style={{flex:1,backgroundColor:'black'}}>
+   <WebView
+      source={{uri:"https://ryfmcebu.com"}}
+      style={{flex:1,justifyContent:'center',alignItems:'center'}}
+    />
+    </View>
+ 
     
     // <View style={styles.container}>
     //   <WebView
